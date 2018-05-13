@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E25222AC2F0B24DA96E4E92 /* Pods_Kitten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E706139F221874F5E8CB6F /* Pods_Kitten.framework */; };
 		840F224E20A6B26D00636611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840F224D20A6B26D00636611 /* AppDelegate.swift */; };
 		840F225020A6B26D00636611 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840F224F20A6B26D00636611 /* ViewController.swift */; };
 		840F225320A6B26D00636611 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840F225120A6B26D00636611 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F74113FB153ACA7E78291F1 /* Pods-Kitten.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitten.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitten/Pods-Kitten.debug.xcconfig"; sourceTree = "<group>"; };
+		8336DDAE00E61811D52771C4 /* Pods-Kitten.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitten.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitten/Pods-Kitten.release.xcconfig"; sourceTree = "<group>"; };
 		840F224A20A6B26D00636611 /* Kitten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kitten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840F224D20A6B26D00636611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840F224F20A6B26D00636611 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		840F225420A6B26F00636611 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840F225720A6B26F00636611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840F225920A6B26F00636611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E706139F221874F5E8CB6F /* Pods_Kitten.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitten.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E25222AC2F0B24DA96E4E92 /* Pods_Kitten.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BCC88FB1C6C4A27FFABCBBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F74113FB153ACA7E78291F1 /* Pods-Kitten.debug.xcconfig */,
+				8336DDAE00E61811D52771C4 /* Pods-Kitten.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		840F224120A6B26D00636611 = {
 			isa = PBXGroup;
 			children = (
 				840F224C20A6B26D00636611 /* Kitten */,
 				840F224B20A6B26D00636611 /* Products */,
+				5BCC88FB1C6C4A27FFABCBBC /* Pods */,
+				B2FECF8A9069DAD3584CB8F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Kitten;
 			sourceTree = "<group>";
 		};
+		B2FECF8A9069DAD3584CB8F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3E706139F221874F5E8CB6F /* Pods_Kitten.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 840F225C20A6B26F00636611 /* Build configuration list for PBXNativeTarget "Kitten" */;
 			buildPhases = (
+				76DFD6FD65ED9536CE02D92B /* [CP] Check Pods Manifest.lock */,
 				840F224620A6B26D00636611 /* Sources */,
 				840F224720A6B26D00636611 /* Frameworks */,
 				840F224820A6B26D00636611 /* Resources */,
@@ -129,6 +154,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76DFD6FD65ED9536CE02D92B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kitten-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		840F224620A6B26D00636611 /* Sources */ = {
@@ -278,6 +324,7 @@
 		};
 		840F225D20A6B26F00636611 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F74113FB153ACA7E78291F1 /* Pods-Kitten.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +343,7 @@
 		};
 		840F225E20A6B26F00636611 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8336DDAE00E61811D52771C4 /* Pods-Kitten.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
