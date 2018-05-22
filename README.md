@@ -1,6 +1,6 @@
 <div align="center">
 
-![logo](https://github.com/KittenApp/Kitten/blob/canary/md_assets/kitten.png)
+![logo](https://avatars3.githubusercontent.com/u/33913652?s=200&v=4)
 
 # Kitten
 ## An awesome video chat platform for communities.
