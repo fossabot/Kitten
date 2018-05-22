@@ -8,4 +8,4 @@ This is the final version of Kitten before launch. In house, several iterations 
 
 </div>
 
-There is nothing to see for now. Come back in a bit.
+The new version of Kitten just started development. To see what is on the todo list, check our [Notion](https://www.notion.so/kittenapp/6dd21d52388845d796327a3d0a952f98?v=8fb4a04334ad4e909914abe830ed5f08) page. If you want edit permissions, email me.
