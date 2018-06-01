@@ -8,5 +8,16 @@ target 'Kitten' do
   use_frameworks!
 
   # Pods for Kitten
-  
+  pod 'HaishinKit', '~> 0.8.8'
+  pod 'Alamofire', '~> 4.7'
+  pod 'Socket.IO-Client-Swift', '~> 13.2.0'
 end
+
+plugin 'cocoapods-keys', {
+  :project => "Kitten",
+  :keys => [
+    "KittenRTMPUrl",
+    "KittenAPIUrl",
+    "KittenHLSUrl"
+  ]
+ }
