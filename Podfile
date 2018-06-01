@@ -20,7 +20,7 @@ plugin 'cocoapods-keys', {
   :project => "Kitten",
   :keys => [
     "KittenRTMPUrl",
-    "KittenAPIUrl",
+    # "KittenAPIUrl",
     "KittenHLSUrl"
   ]
  }
