@@ -14,6 +14,7 @@
 		840F225520A6B26F00636611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840F225420A6B26F00636611 /* Assets.xcassets */; };
 		840F225820A6B26F00636611 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840F225620A6B26F00636611 /* LaunchScreen.storyboard */; };
 		84FC5E8D20C1D2E000A671A3 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FC5E8C20C1D2DF00A671A3 /* IJKMediaFramework.framework */; };
+		84FC5E8F20C1DC3000A671A3 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC5E8E20C1DC3000A671A3 /* Injection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		84FC5E8820C1D20B00A671A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84FC5E8A20C1D21200A671A3 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		84FC5E8C20C1D2DF00A671A3 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		84FC5E8E20C1DC3000A671A3 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		D3E706139F221874F5E8CB6F /* Pods_Kitten.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitten.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				840F225420A6B26F00636611 /* Assets.xcassets */,
 				840F225620A6B26F00636611 /* LaunchScreen.storyboard */,
 				840F225920A6B26F00636611 /* Info.plist */,
+				84FC5E8E20C1DC3000A671A3 /* Injection.swift */,
 			);
 			path = Kitten;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FC5E8F20C1DC3000A671A3 /* Injection.swift in Sources */,
 				840F225020A6B26D00636611 /* ViewController.swift in Sources */,
 				840F224E20A6B26D00636611 /* AppDelegate.swift in Sources */,
 			);
