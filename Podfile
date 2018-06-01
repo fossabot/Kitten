@@ -10,7 +10,9 @@ target 'Kitten' do
   # Pods for Kitten
   pod 'HaishinKit', '~> 0.8.8'
   pod 'Alamofire', '~> 4.7'
-  pod 'Socket.IO-Client-Swift', '~> 13.2.0'
+  
+  # we may opt for plain websockets for speed
+  # pod 'Socket.IO-Client-Swift', '~> 13.2.0'
 end
 
 plugin 'cocoapods-keys', {
