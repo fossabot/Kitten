@@ -46,13 +46,41 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @objc func broadcastTap(_ sender: UITapGestureRecognizer) {
-        print("Broadcast button tapped")
-    }
     
     @objc func watchTap(_ sender: UITapGestureRecognizer) {
         print("Watch button tapped")
+        
+        let alert = UIAlertController(title: "Watch a Stream", message: "Please input a stream code", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let action = UIAlertAction(title: "I'm done!", style: .default) { (alertAction) in
+            let textField = alert.textFields![0] as UITextField
+            print("You want to watch the stream under the stream code \(String(describing: textField.text))")
+        }
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Enter stream code"
+        }
+        
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @objc func broadcastTap(_ sender: UITapGestureRecognizer) {
+        print("Broadcast button tapped")
+        
+        let alert = UIAlertController(title: "Start Broadcasting", message: "Please choose a stream code", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let action = UIAlertAction(title: "I'm done!", style: .default) { (alertAction) in
+            let textField = alert.textFields![0] as UITextField
+            print("You want to broadcast under the stream code \(String(describing: textField.text))")
+        }
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Enter stream code"
+        }
+        
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
 
 }
